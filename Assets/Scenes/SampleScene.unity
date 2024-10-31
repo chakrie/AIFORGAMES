@@ -357,7 +357,7 @@ MonoBehaviour:
   populationSize: 10
   creatures: []
   generation: 1
-  generationDuration: 10
+  generationDuration: 5
 --- !u!1 &2040956145
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,9 +602,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01645f20462bf804b8c8f4419528295e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   size: 3
   limbs: 0
+  wings: 0
+  eyes: 0
+  children: 0
+  intelect: 0
+  FOV: 0
+  swim: 0
+  Diet: 
+  MType: 
+  LaysEggs: 0
+  FormPack: 0
   color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &2667943983578297662
 MeshCollider:
