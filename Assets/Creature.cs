@@ -1,10 +1,24 @@
+using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Creature : MonoBehaviour
 {
     public float speed;
     public float size;
+    public int limbs;
+    public int wings;
+    public int eyes;
+    public int children;
+    public float intelect;
+    public float FOV;
+    public double swim;
+    public string Diet;
+    public string MType;
+    public double LaysEggs;
+    public double FormPack;
+
     public Color color;
     private Vector3 targetPosition;
 
@@ -20,12 +34,19 @@ public class Creature : MonoBehaviour
     }
 
     // Mutate attributes randomly
+    
+    public void Mate()
+    {
+
+    }
+    
     public void Mutate()
     {
-        speed += Random.Range(-0.1f, 0.1f);
-        size += Random.Range(-0.1f, 0.1f);
-        size = Mathf.Clamp(size, 0.5f, 2.0f);
+        speed += Random.Range(-0.5f, 0.5f);
+        size += Random.Range(-0.2f, 0.3f);
+        size = Mathf.Clamp(size, 0.5f, Random.value);
         color = new Color(Random.value, Random.value, Random.value);
+        limbs += Random.Range(1, 8);
     }
 
     // Apply the attributes
@@ -33,6 +54,7 @@ public class Creature : MonoBehaviour
     {
         transform.localScale = Vector3.one * size;
         GetComponent<Renderer>().material.color = color;
+        limbs = limbs++;
     }
 
     // Move toward a target

@@ -1,0 +1,26 @@
+chromosome Parameters,
+Speed-  How fast they are
+Size-   How Big can the Creature can get
+Limbs-  Number of limbs they have
+	Number of wings
+	Number of fins
+Diet- 	Omnivores
+	Carnivores
+	Herbivores
+	Photosynthesis
+Movement- Flight
+	  can move on ground
+	  can swim
+Reproduction- 	in womb
+		Lay eggs
+Social -  Independent
+	  Follows a pack
+Eye Count -
+Field of vision
+Night sight
+Colour perception
+Intellect
+
+
+
+

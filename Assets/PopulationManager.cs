@@ -5,10 +5,10 @@ using UnityEngine;
 public class PopulationManager : MonoBehaviour
 {
     public GameObject creaturePrefab;
-    public int populationSize = 10;
+    public int populationSize = 50;
     public List<Creature> creatures;
     public int generation = 1;
-    public float generationDuration = 10f;
+    public float generationDuration = 1000f;
 
     private void Start()
     {
